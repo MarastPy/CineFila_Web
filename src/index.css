@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@600&family=Nunito:wght@400;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 17%;
+    --foreground: 0 0% 100%;
+
+    --card: 0 0% 20%;
+    --card-foreground: 0 0% 100%;
+
+    --popover: 0 0% 20%;
+    --popover-foreground: 0 0% 100%;
+
+    --primary: 358 68% 46%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 358 68% 60%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 0 0% 25%;
+    --muted-foreground: 0 0% 60%;
+
+    --accent: 358 68% 46%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 0 0% 30%;
+    --input: 0 0% 30%;
+    --ring: 358 68% 46%;
+
+    --radius: 0;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Nunito', sans-serif;
+    @apply bg-background text-foreground;
+    line-height: 1.6;
+  }
+
+  h1, h2, h3 {
+    font-family: 'EB Garamond', serif;
+  }
+
+  p {
+    text-align: justify;
+  }
+
+  a {
+    color: hsl(358 68% 46%);
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+
+  a:hover {
+    color: hsl(358 68% 56%);
+  }
+}
